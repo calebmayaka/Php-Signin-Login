@@ -14,8 +14,8 @@
     <p>EKERENYO SUNSHINE <br> ACADEMY</p>
    <h3 class="alignn"> Login </h3>
     <form action="login.php" method="post" >
-      <input type="text" name="username" placeholder="Enter Username">
-      <input type="text" name="password" placeholder="Enter Password">
+      <input type="text" autocomplete="off" name="username" placeholder="Enter Username">
+      <input type="text" autocomplete="off" name="password" placeholder="Enter Password">
       <p class="recover">
         <a href="#">Recover Password</a>
       </p>

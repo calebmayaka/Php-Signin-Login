@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!---responsive design-->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<style>
+* {
+    /*border box tells the browser not to add any padding or border as the on you have specified is final*/
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+</style>
+
+</head>
+<title>EKSA Feedback</title>
+
+<body class="body1">
+<style>
+    .body1{
+        background: linear-gradient(to right, #00093c, #2d0b00);
+    }
+    .body1 h2{
+        color:#45a049;
+        text-align: center;
+        font-size: 35px;
+    }
+    .body1 p{
+        color:brown;
+        text-align: center;
+        font-size:15px; 
+        font-style: italic;
+    }
+    body img{
+    height:150px;
+	width:150px;
+	position:absolute;
+	top:0px;
+	left:0px;
+    float: left;
+    rotate:calc(2);
+    }
+
+</style>
+<img src="logo150.png" alt="LOGO">
+<h2>Ekerenyo Sunshine Academy Feedback form</h2>
+<p>Please highlight your feedback or complaints below and we will get back to you</p>
+
+<div class="container">
+  <form action="https://ombogomayaka.github.io/EkerenyoSunshineAcademy/">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="KCPE YEAR">KCPE YEAR</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+        <option value="">Continuing Pupil</option>
+          <option value="">2012</option>
+          <option value="">2013</option>
+          <option value="">2014</option>
+          <option value="">2015</option>
+          <option value="">2016</option>
+          <option value="">2017</option>
+          <option value="">2018</option>
+          <option value="">2019</option>
+          <option value="">2020</option>
+          <option value="">2021</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<footer>
+    <div class ="footer">
+        Copyright 2022 Ekerenyo Sunshine Academy
+    </div>
+    <div class="button">
+      <a href="p1.html">BACK</a>
+    </div>
+    <style>
+        .footer{
+            padding-top:20px;
+            padding-bottom: 0px;
+            margin:0;
+            border:0;
+        }
+        .footer{
+            font-size:13px;
+            text-align:center;
+            font-style: italic;
+            color:rgb(129, 0, 108);
+        }
+        .button{
+          border: 2px solid #fff;
+          padding: 7px 6px;
+          display: inline-block;
+          position: relative;
+          background: transparent;
+          cursor: pointer;
+          color:azure;
+          font-size:12px
+        }
+        .button a{
+          color:aqua;
+        }
+    </style>
+    
+</footer>
+</body>
+</html>

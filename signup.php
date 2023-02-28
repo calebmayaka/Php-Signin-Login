@@ -5,8 +5,8 @@ if(isset($_POST['signup'])){
 $Sname = $_POST['name'];
 $username = $_POST['username'];
 $kcpeyear = $_POST['kcpe'];
-$Upassword = md5($_POST['password']);
-$confirmpassword = md5($_POST['confirm']);
+$Upassword = ($_POST['password']);
+$confirmpassword = ($_POST['confirm']);
 
 $sql="select * from studentInfo where username='$username'";
 $result=mysqli_query($con,$sql);

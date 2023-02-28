@@ -14,11 +14,11 @@
     <p>EKERENYO SUNSHINE <br> ACADEMY</p>
    <h3 class="alignn"> Create an Account</h3>
     <form action="signup.php" method="post" >
-      <input type="text" name="name" placeholder="Full name">
-      <input type="text" name="username" placeholder="Username">
-      <input type="number" name="kcpe" placeholder="KCPE Year">
-      <input type="password" name="password" placeholder="Password">
-      <input type="password" name="confirm" placeholder="Confirm Password">
+      <input type="text" autocomplete="off" name="name" placeholder="Full name">
+      <input type="text" autocomplete="off" name="username" placeholder="Username">
+      <input type="number" autocomplete="off" name="kcpe" placeholder="KCPE Year">
+      <input type="password" autocomplete="off" name="password" placeholder="Password">
+      <input type="password" autocomplete="off" name="confirm" placeholder="Confirm Password">
           
       <p class="recover">
         <a href="#">Recover Password</a>
